@@ -24,7 +24,8 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+[Shoppit](https://shoppit.cl/) backend for the Shoppit application.
+This backend requires a connection to a Postgres database
 
 ## Installation
 
@@ -60,14 +61,15 @@ $ npm run test:cov
 
 ## Support
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+- Teach Leader - [Nicolas Rodsevich](https://www.linkedin.com/in/nicolas-rodsevich/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=ar)
+- chief Developer - [Joaquin Varela](https://www.linkedin.com/in/joaquin-varela/)
+- Developer - [Rodrigo Quintero](http://rodrigoquintero.tamarindorivas.com)
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- App - [Shoppit](https://shoppit.cl/)
+- It-TechGroup - [IT-TechGroup](https://it-techgroup.com/)
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+Tis BackEnd is [It-TechGroup](LICENSE).
