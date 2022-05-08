@@ -12,7 +12,7 @@ import {
   Res,
   // ParseIntPipe,
 } from '@nestjs/common';
-import {ApiTags, ApiOperation} from '@nestjs/swagger'
+import { ApiTags, ApiOperation } from '@nestjs/swagger';
 
 import { Response } from 'express';
 import { ParseIntPipe } from '../../common/parse-int.pipe';
@@ -25,7 +25,7 @@ export class ProductsController {
   constructor(private productsService: ProductsService) {}
 
   @Get()
-  @ApiOperation({ summary: ' List of products'})
+  @ApiOperation({ summary: ' List of products' })
   getProducts(
     @Query('limit') limit = 100,
     @Query('offset') offset = 0,
@@ -38,13 +38,13 @@ export class ProductsController {
   }
 
   @Get('filter')
-  @ApiOperation({ summary: 'return products filter by xxxx'})
+  @ApiOperation({ summary: 'return products filter by xxxx' })
   getProductFilter() {
     return `yo soy un filter`;
   }
 
   @Get(':productId')
-  @ApiOperation({ summary: ' product details'})
+  @ApiOperation({ summary: ' product details' })
   @HttpCode(HttpStatus.ACCEPTED)
   getOne(@Param('productId', ParseIntPipe) productId: number) {
     // response.status(200).send({
@@ -54,7 +54,7 @@ export class ProductsController {
   }
 
   @Post()
-  @ApiOperation({ summary: 'insert a new product in DB'})
+  @ApiOperation({ summary: 'insert a new product in DB' })
   create(@Body() payload: CreateProductDto) {
     // return {
     //   message: 'accion de crear',
@@ -64,13 +64,13 @@ export class ProductsController {
   }
 
   @Put(':id')
-  @ApiOperation({ summary: 'insert or modify attributes in a given product '})
+  @ApiOperation({ summary: 'insert or modify attributes in a given product ' })
   update(@Param('id') id: string, @Body() payload: UpdateProductDto) {
     return this.productsService.update(+id, payload);
   }
 
   @Delete(':id')
-  @ApiOperation({ summary: 'delete a product from the DB'})
+  @ApiOperation({ summary: 'delete a product from the DB' })
   delete(@Param('id') id: string) {
     return this.productsService.remove(+id);
   }

@@ -8,7 +8,7 @@ import {
   Delete,
   ParseIntPipe,
 } from '@nestjs/common';
-import {ApiTags} from '@nestjs/swagger';
+import { ApiTags } from '@nestjs/swagger';
 
 import { UsersService } from '../services/users.service';
 import { CreateUserDto, UpdateUserDto } from '../dtos/user.dto';
@@ -32,7 +32,6 @@ export class UsersController {
   getOrders(@Param('id', ParseIntPipe) id: number) {
     return this.usersService.findOne(id);
   }
-
 
   @Post()
   create(@Body() payload: CreateUserDto) {

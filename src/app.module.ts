@@ -7,8 +7,8 @@ import { AppService } from './app.service';
 import { ProductsModule } from './products/products.module';
 import { UsersModule } from './users/users.module';
 import { DatabaseModule } from './database/database.module';
-import { enviroments } from './enviroments'
-import  config from './config'
+import { enviroments } from './enviroments';
+import config from './config';
 
 @Module({
   imports: [

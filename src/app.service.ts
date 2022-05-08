@@ -11,8 +11,10 @@ export class AppService {
   getHello() {
     const apiKey = this.configService.apiKey;
     const db = this.configService.database.name;
-    return {messege:'Hello to Shoppit API-REST',
-            apikey: `the ApiKey is :${apiKey}`,
-            dbName:  `and the dbName is:${db}`}
+    return {
+      messege: 'Hello to Shoppit API-REST',
+      apikey: `the ApiKey is :${apiKey}`,
+      dbName: `and the dbName is:${db}`,
+    };
   }
 }
