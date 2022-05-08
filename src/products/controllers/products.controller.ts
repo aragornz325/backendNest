@@ -9,12 +9,10 @@ import {
   Delete,
   HttpStatus,
   HttpCode,
-  Res,
   // ParseIntPipe,
 } from '@nestjs/common';
 import { ApiTags, ApiOperation } from '@nestjs/swagger';
 
-import { Response } from 'express';
 import { ParseIntPipe } from '../../common/parse-int.pipe';
 import { CreateProductDto, UpdateProductDto } from '../dtos/products.dtos';
 import { ProductsService } from './../services/products.service';
@@ -56,10 +54,6 @@ export class ProductsController {
   @Post()
   @ApiOperation({ summary: 'insert a new product in DB' })
   create(@Body() payload: CreateProductDto) {
-    // return {
-    //   message: 'accion de crear',
-    //   payload,
-    // };
     return this.productsService.create(payload);
   }
 
