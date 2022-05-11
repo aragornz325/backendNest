@@ -59,17 +59,8 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## Support
+this is an opensource project built with nestjs.
 
-- Teach Leader - [Nicolas Rodsevich](https://www.linkedin.com/in/nicolas-rodsevich/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=ar)
-- chief Developer - [Joaquin Varela](https://www.linkedin.com/in/joaquin-varela/)
-- Developer - [Rodrigo Quintero](http://rodrigoquintero.tamarindorivas.com)
+Use it at your own risk
 
-## Stay in touch
-
-- App - [Shoppit](https://shoppit.cl/)
-- It-TechGroup - [IT-TechGroup](https://it-techgroup.com/)
-
-## License
-
-Tis BackEnd is [It-TechGroup](LICENSE).
+just mention the developer, supporting the work of others helps us to continue developing
